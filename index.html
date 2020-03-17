@@ -3,15 +3,38 @@
     
 <title>Corrie Anderson</title>
 
-<head>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>  
-    
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+	
+	
+</head>  
   
 <style>
+
+h1
+{
+		font-size: 150px;
+}
+
+@media only screen and (max-width: 1200px)
+{
+	h1
+	{
+		font-size: 100px;
+	}
+}
+
+@media only screen and (max-width: 850px)
+{
+	h1
+	{
+		font-size: 60px;
+	}
+}
 
 .w3-myfont {
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -19,32 +42,76 @@
 
 body
 {
-	background: #ffffff;
+	background: #222;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	<!--background-image: url('assets/test.jpg');
+	background-size: cover;-->
+}
+
+#content
+{
+	margin-top:  8%;
 }
 
 #navBar
 {
+	height: 5%;
 	background: #222;
 }
+
+#otherStuff
+{
+	margin-left: 10%;
+	position: absolute;
+	top: 110%;
+}
+
+
 
 </style>
     
 <body>
 
-	<div class = "w3-bar w3-text-light-grey" id = "navBar">
-	
-		<div class = "w3-right">
-			<a href = "#" class = "w3-button w3-xlarge"><i class="fa fa-github w3-xxlarge"></i></a>
+	<div class = "w3-text-light-gray w3-animate-opacity">
+
+		<nav class = "w3-container w3-text-light-gray w3-large w3-padding-top w3-animate-opacity w3-top" id = "navBar">
+			<a href = "#" class = "w3-button w3-wide">ABOUT ME</a>
+			<a href = "#" class = "w3-button w3-wide">WORK</a>
+			<a href = "#" class = "w3-button w3-wide">CV</a>
+			<a href = "#" class = "w3-button w3-wide">CONTACT</a>
+			
+			<div class = "w3-right w3-hide-small">
+				<a href = "https://github.com/C0zza" class = "w3-button w3-circle">
+					<i class="fa fa-github w3-xxlarge"></i>
+				</a>
+				<a href = "https://www.linkedin.com/in/corrie-anderson-98116119b/" class = "w3-button w3-circle">
+					<i class = "fab fa-linkedin w3-xxlarge"></i>
+				</a>
+			</div>
+		</nav>
+		
+		<div id = "content">
+
+			<section class = "w3-container w3-center">
+			
+				<h1 class = "w3-wide">Corrie Anderson</h1>
+				<p class = "w3-xxlarge">Software Developer for Games</p>
+				<img src = "assets/test2.jpg" class = "w3-circle" style = "width: 200px; height: 200px;">
+				
+			</section>
+			
+			<div id = "otherStuff">
+			
+				<section class = "w3-container">
+				
+					<h2 class = "w3-wide">About Me</h2>
+				
+				</section>
+			
+			</div>
 		</div>
 	
-		<div class = "w3-xlarge">
-			<a href = "#" class = "w3-button">About Me</a>
-			<a href = "#" class = "w3-button">Work</a>
-			<a href = "#" class = "w3-button">Contact</a>
-		</div>
 	</div>
-	
-	<div class = "w3-container"
 	
 </body>
 </html>
