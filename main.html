@@ -106,7 +106,28 @@ body
 	width: 89vw;
 }
 
+#meImg
+{
+	width: 300px; 
+	height: 300px;
+}
 
+@media only screen and (max-width: 385px)
+{
+	#meImg
+	{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 415px)
+{
+	#mobileNav
+	{
+		display: block;
+	}
+}
 
 </style>
     
@@ -114,11 +135,11 @@ body
 
 	<div class = "w3-text-light-gray w3-animate-opacity w3-metro-darken">
 	
-		<section class = "w3-container w3-text-light-gray w3-padding-top w3-animate-opacity w3-top w3-mobile" id = "navBar">
-			<a href = "#aboutMe" class = "w3-button w3-wide w3-hover-pink">ABOUT ME</a>
-			<a href = "#work" class = "w3-button w3-wide w3-hover-pink">WORK</a>
-			<a href = "#cv" class = "w3-button w3-wide w3-hover-pink">CV</a>
-			<a href = "#contact" class = "w3-button w3-wide w3-hover-pink">CONTACT</a>
+		<section class = "w3-container w3-text-light-gray w3-padding-top w3-animate-opacity w3-top" id = "navBar">
+			<a href = "#aboutMe" class = "w3-button w3-wide w3-hover-pink mobileNav">ABOUT ME</a>
+			<a href = "#work" class = "w3-button w3-wide w3-hover-pink mobileNav">WORK</a>
+			<a href = "#cv" class = "w3-button w3-wide w3-hover-pink mobileNav">CV</a>
+			<a href = "#contact" class = "w3-button w3-wide w3-hover-pink mobileNav">CONTACT</a>
 			
 			<a href = "#top" class = "w3-button w3-hide-medium w3-hide-small w3-hover-pink" id = "topButton">
 				<i class = "fas fa-angle-up w3-xlarge"></i>
@@ -140,7 +161,7 @@ body
 			
 				<h1 class = "w3-wide">CORRIE ANDERSON</h1>
 				<p class = "w3-text-pink w3-wide" id = "jobTitle">SOFTWARE DEVELOPER</p>
-				<img src = "assets/me.jpg" class = "w3-circle" style = "width: 300px; height: 300px; margin-top: 50px;">
+				<img src = "assets/me.jpg" class = "w3-circle" id="meImg" style = "margin-top: 50px;">
 				
 			</section>
 			
@@ -149,13 +170,61 @@ body
 				<section class = "w3-container aSection" id = "aboutMe">
 				
 					<h2 class = "w3-wide w3-text-pink">ABOUT ME</h2>
-					<p class = "w3-large">I am currently studying software development at university.</p>
+					<p class = "w3-large">I am currently studying software development at university blablablablababla.</p>
 					
 				</section>
 				
 				<section class = "w3-container aSection" id = "work">
 				
 					<h2 class = "w3-wide w3-text-pink">WORK</h2>
+					
+					<p class = "w3-large">Here you will find work done through University and also extracurricularly blablablablababla</p>
+					
+					<div class = "w3-row w3-margin-right w3-margin-left">
+						<div class = "w3-third">
+							<p class = "w3-center w3-text-pink w3-xlarge w3-wide">PROJECT 1</p>
+							
+								<div class = "w3-container w3-center">
+									<a href = "#" class = "w3-image" alt = "Project 1">
+										<img src = "assets/test2.jpg" class = "w3-hover-shadow" style = "width: 90%; height: 90%;">
+									</a>
+								</div>
+								
+								<div class = "w3-container">
+									<p class = "w3-large" style = "margin-left: 1.5vw;">Project description</p>
+								</div>
+							
+						</div>
+						
+						<div class = "w3-third">
+							<p class = "w3-center w3-text-pink w3-xlarge w3-wide">PROJECT 2</p>
+							
+								<div class = "w3-container w3-center">
+									<a href = "#" class = "w3-image" alt = "Project 1">
+										<img src = "assets/test2.jpg" class = "w3-hover-shadow" style = "width: 90%; height: 90%;">
+									</a>
+								</div>
+								
+								<div class = "w3-container">
+									<p class = "w3-large" style = "margin-left: 1.5vw;">Project description</p>
+								</div>
+							
+						</div>
+						<div class = "w3-third">
+							<p class = "w3-center w3-text-pink w3-xlarge w3-wide">PROJECT 3</p>
+							
+								<div class = "w3-container w3-center">
+									<a href = "#" class = "w3-image" alt = "Project 1">
+										<img src = "assets/test2.jpg" class = "w3-hover-shadow" style = "width: 90%; height: 90%;">
+									</a>
+								</div>
+								
+								<div class = "w3-container">
+									<p class = "w3-large" style = "margin-left: 1.5vw;">Project description</p>
+								</div>
+							
+						</div>
+					</div>
 				
 				</section>
 				
