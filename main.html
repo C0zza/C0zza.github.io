@@ -21,23 +21,7 @@ html {
 
 h1
 {
-		font-size: 150px;
-}
-
-@media only screen and (max-width: 1450px)
-{
-	h1
-	{
-		font-size: 100px;
-	}
-}
-
-@media only screen and (max-width: 1000px)
-{
-	h1
-	{
-		font-size: 60px;
-	}
+		font-size: 7vw;
 }
 
 .w3-myfont {
@@ -52,14 +36,8 @@ body
 	background-size: cover;-->
 }
 
-#content
-{
-	margin-top:  8%;
-}
-
 #navBar
 {
-	height: 5%;
 	background: #222;
 	padding-top: 10px;
 }
@@ -74,20 +52,7 @@ body
 	#navBar
 	{
 		font-size: 14px;
-		text-align: center;
-	}
-}
-
-@media only screen and (max-width:650px)
-{
-	h1
-	{
-		font-size: 40px;
-	}
-	
-	#intro
-	{
-		font-size: 25px;
+		
 	}
 }
 
@@ -96,15 +61,49 @@ body
 	#navBar
 	{
 		font-size: 10px;
-		text-align: center;
+		
 	}
 }
 
 #otherStuff
 {
-	margin-left: 10%;
 	position: absolute;
-	top: 110%;
+	top: 101vh;
+}
+
+#intro
+{
+	
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 13vh;
+	border-style: solid;
+	border-width: 5px;
+	border-bottom-style: none;
+	min-height: 80vh;
+}
+
+#jobTitle
+{
+	font-size: 2vw;
+}
+
+#topButton
+{
+	position: absolute;
+	left: 50%;
+	top: 2px;
+}
+
+.aSection
+{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 5vh;
+	border-style: solid;
+	border-width: 5px;
+	border-bottom-style: none;
+	width: 89vw;
 }
 
 
@@ -114,77 +113,66 @@ body
 <body>
 
 	<div class = "w3-text-light-gray w3-animate-opacity w3-metro-darken">
-
-		<nav class = "w3-container w3-text-light-gray w3-padding-top w3-animate-opacity w3-top" id = "navBar">
-			<a href = "#aboutMe" class = "w3-button w3-wide">ABOUT ME</a>
-			<a href = "#work" class = "w3-button w3-wide">WORK</a>
-			<a href = "#cv" class = "w3-button w3-wide">CV</a>
-			<a href = "#contact" class = "w3-button w3-wide">CONTACT</a>
+	
+		<section class = "w3-container w3-text-light-gray w3-padding-top w3-animate-opacity w3-top" id = "navBar">
+			<a href = "#aboutMe" class = "w3-button w3-wide w3-hover-pink">ABOUT ME</a>
+			<a href = "#work" class = "w3-button w3-wide w3-hover-pink">WORK</a>
+			<a href = "#cv" class = "w3-button w3-wide w3-hover-pink">CV</a>
+			<a href = "#contact" class = "w3-button w3-wide w3-hover-pink">CONTACT</a>
+			
+			<a href = "#top" class = "w3-button w3-hide-medium w3-hide-small w3-hover-pink" id = "topButton">
+				<i class = "fas fa-angle-up w3-xlarge"></i>
+			</a>
 			
 			<div class = "w3-right w3-hide-small" id = "socialIcons">
-				<a href = "https://github.com/C0zza" class = "w3-button w3-circle">
+				<a href = "https://github.com/C0zza" target="_blank" class = "w3-button w3-circle w3-hover-pink">
 					<i class="fa fa-github w3-xlarge"></i>
 				</a>
-				<a href = "https://www.linkedin.com/in/corrie-anderson-98116119b/" class = "w3-button w3-circle">
+				<a href = "https://www.linkedin.com/in/corrie-anderson-98116119b/" target="_blank" class = "w3-button w3-circle w3-hover-pink">
 					<i class = "fab fa-linkedin w3-xlarge"></i>
 				</a>
 			</div>
-		</nav>
+		</section>
 		
 		<div id = "content">
 
-			<section class = "w3-container w3-center">
+			<section class = "w3-container w3-center" id = "intro">
 			
 				<h1 class = "w3-wide">CORRIE ANDERSON</h1>
-				<p class = "w3-xxlarge">Software Developer</p>
+				<p class = "w3-text-pink w3-wide" id = "jobTitle">SOFTWARE DEVELOPER</p>
 				<img src = "assets/me.jpg" class = "w3-circle" style = "width: 300px; height: 300px; margin-top: 50px;">
 				
 			</section>
 			
 			<div id = "otherStuff">
 			
-				<section class = "w3-container" id = "aboutMe">
+				<section class = "w3-container aSection" id = "aboutMe">
 				
-					<h2 class = "w3-wide">ABOUT ME</h2>
+					<h2 class = "w3-wide w3-text-pink">ABOUT ME</h2>
 					<p class = "w3-xxlarge">Software Developer</p>
 					<p class = "w3-xxlarge">Software Developer</p>
 					<p class = "w3-xxlarge">Software Developer</p>
 					<p class = "w3-xxlarge">Software Developer</p>
 					<p class = "w3-xxlarge">Software Developer</p>
 					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
-					<p class = "w3-xxlarge">Software Developer</p>
+					
 				</section>
 				
-				<section class = "w3-container" id = "work">
+				<section class = "w3-container aSection" id = "work">
 				
-					<h2 class = "w3-wide">WORK</h2>
+					<h2 class = "w3-wide w3-text-pink">WORK</h2>
 				
 				</section>
 				
-				<section class = "w3-container" id = "cv">
+				<section class = "w3-container aSection" id = "cv">
 				
-					<h2 class = "w3-wide">CV</h2>
+					<h2 class = "w3-wide w3-text-pink">CV</h2>
 				
 				</section>
 				
-				<section class = "w3-container" id = "contact">
+				<section class = "w3-container aSection" id = "contact">
 				
-					<h2 class = "w3-wide">CONTACT</h2>
+					<h2 class = "w3-wide w3-text-pink">CONTACT</h2>
 				
 				</section>
 			
