@@ -17,7 +17,7 @@ body
 	background: #222;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	<!--background-image: url('assets/test.jpg');
-	background-size: cover;-->
+	background-size: cover;
 }
 
 #navBar
@@ -65,6 +65,11 @@ body
 	border-width: 5px;
 	border-bottom-style: none;
 	min-height: 80vh;
+}
+
+#introContent
+{
+	margin-top: 15vh;
 }
 
 #jobTitle
